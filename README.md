@@ -23,14 +23,14 @@ return [
 ```bash
 use Chllen\HyperfGrpcClient\GrpcClient
 
-class HiClient extends GrpcClient
+class OrderClient extends GrpcClient
 {
-    public function sayHello(HiUser $argument)
+    public function create(Order $order)
     {
         return $this->_simpleRequest(
-            '/grpc.hi/sayHello',
-            $argument,
-            [HiReply::class, 'decode']
+            '/orderService/create',
+            $order,
+            [OrderReply::class, 'decode']
         );
     }
 }
