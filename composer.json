@@ -1,0 +1,31 @@
+{
+    "name": "chllen/hyperf-grpc-client",
+    "description": "A grpc client component for Hyperf.",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "grpc-client"
+    ],
+    "require": {
+        "php": ">=7.2",
+        "hyperf/etcd": "~2.2.0",
+        "ramsey/uuid": "^4.2",
+        "swoole/etcd-client": "^2.0"
+    },
+    "suggest": {
+        "hyperf/event": "Required to use RegisterServiceListener.",
+        "hyperf/framework": "Required to use RegisterServiceListener.",
+        "chllen/hyperf-service-micro-etcd": "A service go-micro component for Hyperf."
+    },
+    "autoload": {
+        "psr-4": {
+            "Chllen\\HyperfGrpcClient\\": "src/"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Chllen\\HyperfGrpcClient\\ConfigProvider"
+        }
+    }
+}
