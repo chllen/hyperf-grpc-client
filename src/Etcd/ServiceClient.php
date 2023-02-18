@@ -3,8 +3,8 @@
 
 namespace Chllen\HyperfGrpcClient\Etcd;
 
-use Chllen\HyperfServiceMicro\FrameworkManager;
-use Chllen\HyperfServiceMicro\NodeManager;
+use Chllen\HyperfGrpcClient\FrameworkManager;
+use Chllen\HyperfGrpcClient\NodeManager;
 use Chllen\HyperfServiceMicroEtcd\Etcd\WatcherInterface;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\LoadBalancer\LoadBalancerManager;

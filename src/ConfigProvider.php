@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Chllen\HyperfGrpcClient;
 
 
-use Chllen\HyperfServiceMicro\Listener\SearchServiceListener;
+use Chllen\HyperfGrpcClient\Listener\SearchServiceListener;
 
 class ConfigProvider
 {
